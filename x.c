@@ -20,7 +20,6 @@ char *argv0;
 #include "st.h"
 #include "win.h"
 
-float alpha = 0.6;
 
 /* types used in config.h */
 typedef struct {
