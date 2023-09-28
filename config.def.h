@@ -99,28 +99,30 @@ float alpha = 0.6;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    [0] = "#000000", /* black   */
-    [1] = "#ff5555", /* red     */
-    [2] = "#50fa7b", /* green   */
-    [3] = "#f1fa8c", /* yellow  */
-    [4] = "#bd93f9", /* blue    */
-    [5] = "#ff79c6", /* magenta */
-    [6] = "#8be9fd", /* cyan    */
-    [7] = "#bbbbbb", /* white   */
+    [0] = "#123e7c", /* black   */
+    [1] = "#ff0000", /* red     */
+    [2] = "#d300c4", /* green   */
+    [3] = "#f57800", /* yellow  */
+    [4] = "#123e7c", /* blue    */
+    [5] = "#711c91", /* magenta */
+    [6] = "#0abdc6", /* cyan    */
+    [7] = "#d7d7d5", /* white   */
                                   
     /* 8 bright colors */
-    [8]  = "#44475a", /* black   */
-    [9]  = "#ff5555", /* red     */
-    [10] = "#50fa7b", /* green   */
-    [11] = "#f1fa8c", /* yellow  */
-    [12] = "#bd93f9", /* blue    */
-    [13] = "#ff79c6", /* magenta */
-    [14] = "#8be9fd", /* cyan    */
-    [15] = "#ffffff", /* white   */
+    [8]  = "#1c61c2", /* black   */
+    [9]  = "#ff0000", /* red     */
+    [10] = "#d300c4", /* green   */
+    [11] = "#f57800", /* yellow  */
+    [12] = "#00ff00", /* blue    */
+    [13] = "#711c91", /* magenta */
+    [14] = "#0abdc6", /* cyan    */
+    [15] = "#d7d7d5", /* white   */
                                    
     /* special colors */
-    [256] = "#282a36", /* background */
-    [257] = "#f8f8f2", /* foreground */
+	[255] = 0,
+    [256] = "#0abdc6", /* background */
+    [257] = "#000b1e", /* foreground */
+    [258] = "#ffffff", /* cursor */
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
@@ -134,10 +136,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 256;
+unsigned int defaultbg = 257;
+unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 258;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
