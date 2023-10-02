@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "xos4 Terminus:pixelsize=20:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -382,13 +382,13 @@ static Key key[] = {
 	{ XK_Next,          ControlMask,    "\033[6;5~",     0,    0},
 	{ XK_Next,          ShiftMask,      "\033[6;2~",     0,    0},
 	{ XK_Next,          XK_ANY_MOD,     "\033[6~",       0,    0},
-	{ XK_F1,            XK_NO_MOD,      "\033OP" ,       0,    0},
+	//{ XK_F1,            XK_NO_MOD,      "\033OP" ,       0,    0},
 	{ XK_F1, /* F13 */  ShiftMask,      "\033[1;2P",     0,    0},
 	{ XK_F1, /* F25 */  ControlMask,    "\033[1;5P",     0,    0},
 	{ XK_F1, /* F37 */  Mod4Mask,       "\033[1;6P",     0,    0},
 	{ XK_F1, /* F49 */  Mod1Mask,       "\033[1;3P",     0,    0},
 	{ XK_F1, /* F61 */  Mod3Mask,       "\033[1;4P",     0,    0},
-	{ XK_F2,            XK_NO_MOD,      "\033OQ" ,       0,    0},
+	//{ XK_F2,            XK_NO_MOD,      "\033OQ" ,       0,    0},
 	{ XK_F2, /* F14 */  ShiftMask,      "\033[1;2Q",     0,    0},
 	{ XK_F2, /* F26 */  ControlMask,    "\033[1;5Q",     0,    0},
 	{ XK_F2, /* F38 */  Mod4Mask,       "\033[1;6Q",     0,    0},
